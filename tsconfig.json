@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "Node",
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "lib": [
+      "ESNext"
+    ],
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "build",
+    "rootDirs": [
+      ".",
+      "src"
+    ]
+  },
+  "include": [
+    "src",
+    "package.json"
+  ],
+  "exclude": [
+    "**/__tests__",
+    "**/*.test.ts"
+  ]
+}
