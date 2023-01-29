@@ -2,6 +2,7 @@
 *
 .*
 
+!.dockerignore
 !.editorconfig
 !.eslintignore
 !.eslintrc.js
@@ -9,6 +10,9 @@
 !.lintstagedrc.js
 !.prettierrc.js
 !commitlint.config.js
+!dev.Dockerfile
+!docker-compose.yml
+!Dockerfile
 !jest.config.ts
 !package.json
 !package-lock.json
@@ -18,6 +22,14 @@
 !.husky/
 !.husky/**
 !.husky/**/*
+
+!__mocks__/
+!__mocks__/**
+!__mocks__/**/*
+
+!docs/
+!docs/**
+!docs/**/*
 
 !src/
 !src/**

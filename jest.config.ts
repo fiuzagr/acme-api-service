@@ -10,9 +10,12 @@ const config: Config = {
   modulePathIgnorePatterns: [
     '<rootDir>/test/__fixtures__',
     '<rootDir>/node_modules',
-    '<rootDir>/dist',
+    '<rootDir>/build',
   ],
   preset: 'ts-jest',
+  fakeTimers: {
+    enableGlobally: true,
+  },
 };
 
 export default config;

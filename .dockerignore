@@ -1,0 +1,11 @@
+.husky/
+.idea/
+node_modules/
+build/
+coverage/
+docs/
+
+__mocks__/
+__tests__/
+*.test.js
+*.test.ts

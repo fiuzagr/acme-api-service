@@ -1,3 +1,4 @@
+import { beforeAll, describe, expect, it } from '@jest/globals';
 import supertest, { SuperTest, Test } from 'supertest';
 import server from '../server';
 
@@ -9,7 +10,7 @@ describe('server', () => {
   });
 
   it('health route returns 200', async () => {
-    const response = await request.get('/health');
+    const response = await request.get('/healthz');
     expect(response.status).toEqual(200);
   });
 

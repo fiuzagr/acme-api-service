@@ -5,8 +5,8 @@ import helmet from 'helmet';
 import compression from 'compression';
 import pinoHttp from 'pino-http';
 
-import logger from './logger';
 import { packageName, packageVersion } from './configuration';
+import logger from './logger';
 
 const server = express();
 
@@ -23,6 +23,6 @@ server
     })
   )
   .get('/version', (_req, res) => res.send(`${packageName}@${packageVersion}`))
-  .get('/health', (_req, res) => res.send('ok'));
+  .get('/healthz', async (_req, res) => res.send('ok'));
 
 export default server;

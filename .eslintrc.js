@@ -1,4 +1,6 @@
 const OFF = 0;
+const WARN = 1;
+const ERROR = 2;
 
 module.exports = {
   root: true,
@@ -8,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:sonarjs/recommended',
   ],
+  plugins: ['prettier', 'sonarjs', 'tsdoc'],
   env: {
     node: true,
     es6: true,
@@ -18,9 +21,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['prettier', 'sonarjs'],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': ERROR,
+    'tsdoc/syntax': WARN,
   },
   overrides: [
     {
